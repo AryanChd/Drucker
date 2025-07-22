@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/Logo.png">
+    <title>Drucker | HP</title>
+  
+</head>
+
+<body>
+    <main>
+        <header class="container">
+            <div class="page-header">
+                <img class="logo" src="/images/Courseworklogo.jpg">
+                <input type="checkbox" id="click">
+
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <!-- Navigation Section-->
+
+                    <li><a href="/home.html" class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="/product.html" style="--navAni:4">Product</a></li>
+                    <li><a href="/blog.html" style="--navAni:3">Blog</a></li>
+                    <li><a href="/research.html" style="--navAni:5">Research</a></li>
+                    <li><a href="/aboutus.html" style="--navAni:2">About Us</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+        </header>
+        </div>
+        <!-- Main Content Section -->
+        <div id="product">
+            <img id="product-img" src="/images/hpprod1.avif" alt="HP 415">
+            <div id="product-info">
+                <h2 class="printerName"> HP 415 All-in-One Ink Tank Wireless Color Printer</h2>
+                <div class="product-price">Rs. 26,000</div>
+                <ul class="product-details">
+                    <li>A4 Color Inkjet All-in-One Printer</li>
+                    <li>Perfect for Home</li>
+                    <li>Print Copy and Scan</li>
+                    <li>Print speed up to 8 ppm (black) and 5 ppm (color)</li>
+                    <li>Wi-Fi</li>
+                    <li>Color CPP to 22p/Page</li>
+                    <li>Specifications of HP 415 All-in-One Ink Tank Wireless Color Printer</li>
+                    <li>Brand: HP</li>
+                    <li>SKU: 127191815_NP-1034479970</li>
+                    <li>Portable: Yes</li>
+                    <li>Printer Connectivity Type: Wireless network printing</li>
+                    <li>Print Speed (CPM): 8</li>
+                    <li>Paper Handling: A4 210mm X 297mm</li>
+                </ul>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="product">
+            <img id="product-img" src="/images/hpprod2.png" alt="HP Laser MFP 135a">
+            <div id="product-info">
+                <h2 class="printerName"> HP Laser MFP 135a Print, Copy, Scan, Multi-Functional All in One Office Printer
+                </h2>
+                <div class="product-price">Rs. 31,000</div>
+                <ul class="product-details">
+                    <li>Uncompromising laser quality</li>
+                    <li>This surprisingly small laser delivers exceptional quality, page after page.</li>
+                    <li>Sharp, black text: Produce sharp text, bold blacks, and crisp graphics.</li>
+                    <li>The right price: Rely on a high-performance laser MFP at an affordable price.</li>
+                    <li>Fast printing: Get print speeds up to 20 ppm.</li>
+                    <li>Standing screen display size: 2</li>
+                    <li>RAM Size: 128MB</li>
+                    <li>Computer Memory Type: DDR DRAM</li>
+                    <li>Number of USB 2.0 Ports: 1</li>
+                </ul>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="product">
+            <img id="product-img" src="/images/hpprod3.png" alt="MFP M227fdw">
+            <div id="product-info">
+                <h2 class="printerName">HP LaserJet Pro MFP M227fdw</h2>
+                <div class="product-price">Rs. 43,000</div>
+                <ul class="product-details">
+                    <li>Print, copy, scan, fax, wireless</li>
+                    <li>Print speed letter: Up to 30 ppm (black)</li>
+                    <li>Auto duplex printing; 250-sheet input tray, 35-sheet ADF, NFC touch-to-print</li>
+                    <li>Uses toner with JetIntelligence, High yield toner available</li>
+                    <li>Monthly duty cycle: Up to 30,000 pages</li>
+                    <li>Recommended monthly page volume: 250 to 2500</li>
+                    <li>Print Technology: Laser</li>
+                    <li>Display: 2.7-in touch screen, LCD (color graphics)</li>
+                    <li>Number of print cartridges: 1 Black</li>
+                    <li style="color: rgb(235, 105, 5);"><strong>Specifications of HP LaserJet Pro MFP M227fdw</strong>
+                    </li>
+                    <li>Brand: No Brand</li>
+                    <li>SKU: 128453907_NP-1035919942</li>
+                    <li>Portable: Yes</li>
+                    <li>Printer Connectivity Type: Wired/wireless network printing</li>
+                    <li>Print Speed (CPM): 30</li>
+                    <li>Paper Handling: A4 210mm X 297mm</li>
+                </ul>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- added to cart message -->
+        <script>
+            function addToCart() {
+                alert("HP product added to cart !");
+            }
+        </script>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Drucker Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for darkmode -->
+
+    <script src="/JavaScript/DarkMode.js"></script>
+</body>
+
+</html>
