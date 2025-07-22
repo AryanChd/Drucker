@@ -35,18 +35,18 @@ This was a group project completed by me and three classmates. Together, we plan
 
 ---
 
-## 📸 Screenshots
 
-*(Add screenshots of homepage, product page, cart, and admin panel here if available)*
 
 ---
 
 ## 👨‍💻 Contributors
 
 - Aryan Chaudhary  
-- [Add your 3 classmates' names here]  
+- Himanshu Sharma
+- Jiten shah
+- Abhishek Joshi 
 
 ---
 
-## 📁 Folder Structure
+
 
