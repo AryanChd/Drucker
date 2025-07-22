@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/slider.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Drucker - Home</title>
+  <link rel="icon" href="/images/Logo.png">
+
+</head>
+
+<body>
+  <main>
+    <header class="container">
+      <div class="page-header">
+        <img class="logo" src="/images/Courseworklogo.jpg">
+        <input type="checkbox" id="click">
+
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class='bx bx-menu'></i>
+          </div>
+        </label>
+        <ul>
+          <!-- Navigation Section-->
+
+          <li><a href="home.html" class="active" style="--navAni:1">Home</a></li>
+          <li><a href="product.html" style="--navAni:2">Product</a></li>
+          <li><a href="blog.html" style="--navAni:3">Blog</a></li>
+          <li><a href="research.html" style="--navAni:4">Research</a></li>
+          <li><a href="aboutus.html" style="--navAni:5">About Us</a></li>
+        </ul>
+        <!-- Darkmode icon -->
+        <label class="mode">
+          <input type="checkbox" id="darkModeToggle">
+          <i class='bx bxs-moon'></i>
+        </label>
+      </div>
+
+  </main>
+  <!-- Main Content Section -->
+
+
+  <div class="main">
+    <div class="detail">
+      <h3>Hello, We're</h3>
+      <h1><span style="color:#f9532d;">Drucker</span> Store</h1>
+
+      <p>Step into a realm where ink meets innovation, and every page becomes a masterpiece. </p>
+      <p>Drucker is the world’ s leading manufacturer of high-quality office equipment, including printer.</p>
+      <p>Our products are designed to provide you with superior performance at an affordable price.</p>
+      <p>We are committed to providing our clients with an excellent level of customer service and support.</p>
+      <p>Delivering Quality Products and Services. </p>
+    </div>
+
+
+    <main>
+      <div class="slider active">
+        <h3>Product 1</h3>
+        <div class="slide">
+          <img src="/images/slide1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slider">
+        <h3>Product 2<h3>
+            <div class="slide">
+              <img src="/images/slide2.jpg" alt="" />
+            </div>
+      </div>
+      <div class="slider">
+        <h3>Product 3</h3>
+        <div class="slide">
+          <img src="/images/slide3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slider">
+        <h3>Product 4</h3>
+        <div class="slide">
+          <img src="/images/slide4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slider">
+        <h3>Product 5</h3>
+        <div class="slide">
+          <img src="/images/slide5.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slider">
+        <h3>Product 6</h3>
+        <div class="slide">
+          <img src="/images/slide6.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slider">
+        <h3>Product 7</h3>
+        <div class="slide">
+          <img src="/images/slide7.jpg" alt="" />
+        </div>
+      </div>
+
+
+    </main>
+  </div>
+  <!-- script for slider -->
+  <script>
+    const slides = document.querySelectorAll(".slider");
+    var intervalID = setInterval(nextImage, 1000);
+    var currentImage = 0;
+    function nextImage() {
+      if (currentImage < slides.length - 1) {
+        slides[currentImage].classList.remove("active");
+        currentImage++;
+        slides[currentImage].classList.add("active");
+      }
+      else {
+        slides[currentImage].classList.remove("active");
+        currentImage = 0;
+        slides[currentImage].classList.add("active");
+      }
+    }
+  </script>
+
+  <!-- Footer Section -->
+  <footer>
+    <p style="text-align: center;">&copy; 2024 Drucker Store. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for darkmode -->
+  <script src="/JavaScript/DarkMode.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Drucker | About Us</title>
+    <link rel="icon" href="images/Logo.png">
+</head>
+
+<body>
+    <main>
+        <header class="container">
+            <div class="page-header">
+                <img class="logo" src="images/Courseworklogo.jpg">
+                <input type="checkbox" id="click">
+
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <!-- Navigation Section-->
+
+                    <li><a href="home.html" class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="product.html" style="--navAni:2">Product</a></li>
+                    <li><a href="blog.html" style="--navAni:3">Blog</a></li>
+                    <li><a href="research.html" style="--navAni:4">Research</a></li>
+                    <li><a href="aboutus.html" style="--navAni:5">About Us</a></li>
+
+
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+            <!-- Main Content Section -->
+            <h2>Welcome to Drucker</h2>
+            <p>In Drucker we do not sell just printers, but a printing experience that brings ideas to life. From 2024
+                we were determined to shape a new way of printing.</p>
+            <h2>Our Mission</h2>
+            <p>In the center of our mission, we commit to providing superior print solutions. Drucker Print Solutions is
+                not only a shop; its an entry to the world of acquisition where quality combines with technology and
+                your printing concerns are met precisely.</p>
+            <h2>Expertise That Matters</h2>
+            <p>We are a team of seasoned printing professionals. We have been leading the way in printing trends and
+                technologies after years of learning. This information implies you will have the newest and most
+                dependable printing technology.</p>
+            <a href="product.html">
+                <h2>Explore Our Printer Range</h2>
+            </a>
+            <p>Browse our broad range of printers and other accessories related to printing selected with the specific
+                needs of people in mind. Our areas of expertise are in supplying brand name printers from HP Canon
+                Epson, and Brother. The company’s range of printers also encompasses high-end industrial printing
+                systems and low cost home office models that provide the combination quality, usability and economy.</p>
+            <h2>Customer-Centric Approach</h2>
+            <p>Your satisfaction is paramount. Our support will accompany you all the way – from choosing to
+                post-purchase. To ensure nothing is ever complex with us, our commitment to you extends as far as
+                instant replies and easy communication.</p>
+
+            <section id="team">
+
+                <h2>Our Team</h2>
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <h3>Team Member 1</h3><br>
+                    <img class="img" src="/images/Aryan.jpg" alt="Aryan">
+                    <p>Aryan Chaudhary</p>
+                    <p>Home & Blog Page Developer</p>
+                </div>
+
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <h3>Team Member 2</h3> <br>
+                    <img class="img" src="/images/Jiten.jpg" alt="Jiten">
+                    <p>Jitendra Shah</p>
+                    <p>About Us Page Developer</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <h3>Team Member 3</h3><br>
+                    <img class="img" src="/images/Himanshu.jpg" alt="Himanshu">
+                    <p>Himanshu Kumar Sharma</p>
+                    <p>Product & Blog Page Developer</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <h3>Team Member 4</h3><br>
+                    <img class="img" src="/images/Abishekh.jpg" alt="Abishek">
+                    <p>Abishek Joshi</p>
+                    <p>Research Page Developer</p>
+                </div>
+
+
+            </section>
+
+            <!-- Script for darkmode -->
+            <script src="/JavaScript/DarkMode.js"></script>
+
+
+
+            <!-- Feedback form -->
+            <form id="Feedbackform" action="Feedback" method="post">
+                <h3>Customer Feedback</h3>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+
+                <label for="Message">Feedback:</label>
+                <textarea id="Message" name="message" rows="4" required></textarea><br>
+
+
+                <input type="submit" value="Submit"><br>
+            </form>
+
+            <script>
+                document.getElementById('Feedbackform').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    alert('Thank you ' + document.getElementById('fullName').value + ' for your feedback!');
+                });
+            </script>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Drucker. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
